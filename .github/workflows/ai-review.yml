@@ -113,11 +113,12 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_OWNER: ${{ github.repository_owner }}
           GITHUB_REPO: ${{ github.event.repository.name }}
-          GITHUB_PERSONAL_ACCESS_TOKEN: ${{ secrets.GH_PAT }} 
+          GITHUB_PERSONAL_ACCESS_TOKEN: ${{ secrets.GH_PAT }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
 
           # HuggingFace LLM
-          HF_TOKEN: ${{ secrets.HF_TOKEN }}
-          HF_API_URL: "https://api-inference.huggingface.co/models/mistralai/Mistral-7B-Instruct-v0.2"
+          # HF_TOKEN: ${{ secrets.HF_TOKEN }}
+          # HF_API_URL: "https://api-inference.huggingface.co/models/mistralai/Mistral-7B-Instruct-v0.2"
 
           # Event context — tells the agent WHAT triggered this run
           GH_EVENT_NAME: ${{ github.event_name }}
