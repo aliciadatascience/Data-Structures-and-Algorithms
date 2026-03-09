@@ -71,7 +71,7 @@ jobs:
       - name: Checkout AI Review Agent
         uses: actions/checkout@v4
         with:
-          repository: ${{ aliciadatascience.github-review-agent }}   # e.g. "your-username/github-review-agent"
+          repository: ${{ aliciadatascience/github-review-agent }}   # e.g. "your-username/github-review-agent"
           path: ai-agent                        # Checked out to ./ai-agent/
           # If your agent repo is private, add a PAT secret:
           # token: ${{ secrets.AGENT_REPO_TOKEN }}
